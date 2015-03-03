@@ -4,4 +4,4 @@ date: 2014-12-07 10:34:41
 tags:
 ---
 
-Union Station, Los Angeles, CA
+Los Angeles, CA
