@@ -1,9 +1,9 @@
 {
-  "name": "photos",
+  "name": "places",
   "version": "2.8.3",
   "repository": {
     "type": "git",
-    "url": "https://github.com/justinjaywang/photos.git"
+    "url": "https://github.com/justinjaywang/places.git"
   },
   "private": false,
   "dependencies": {

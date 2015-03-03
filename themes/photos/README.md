@@ -1,1 +1,1 @@
-Eponymous theme for [Photos](https://github.com/justinjaywang/photos) by @justinjaywang.
+Eponymous theme for [Places](https://github.com/justinjaywang/places) by @justinjaywang.

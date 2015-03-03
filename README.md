@@ -1,3 +1,3 @@
 # Places
 
-Oh, the places I'll go.
+I did it. I made a #footselfies blog.
