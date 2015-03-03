@@ -1,0 +1,12 @@
+<main class="page-main page-main--archive">
+  <% var posts = get_posts({
+    orderby: 'date',
+    order: -1,
+    count: 0
+  }); %>
+  <% posts.each(function(post){ %>
+  <a class="post-meta-wrapper" href="<%= url_for(post.path) %>">
+    <%- partial('_partials/post-meta', {post: post, isArchive: true}) %>
+  </a>
+  <% }) %>
+</main>

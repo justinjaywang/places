@@ -1,0 +1,136 @@
+// responsiveness
+// : variables
+@width-screen-sm-min: 480px;
+@width-screen-md-min: 720px;
+@width-screen-lg-min: 960px;
+@width-screen-xs-max: (@width-screen-sm-min - 1);
+@width-screen-sm-max: (@width-screen-md-min - 1);
+@width-screen-md-max: (@width-screen-lg-min - 1);
+
+// colors
+// : variables
+@color-blackish: rgba(0,0,0,0.92);
+@color-white:    rgb(255,255,255);
+// : applications
+@background-color--body: @color-blackish;
+@color--body:            @color-white;
+@color--a:               inherit;
+@color--post-caption:    inherit;
+
+// sizing
+@size-tera:         3;
+@size-giga:         2;
+@size-mega:         1.75;
+@size-largest:      1.5;
+@size-larger:       1.3333;
+@size-large:        1.1667;
+@size-base:         1;
+@size-small:        0.9167;
+@size-smaller:      0.8333;
+@size-smallest:     0.75;
+@size-micro:        0.6667;
+@size-nano:         0.5833;
+@size-pico:         0.5;
+@size-rem-tera:     unit(@size-tera, rem);
+@size-rem-giga:     unit(@size-giga, rem);
+@size-rem-mega:     unit(@size-mega, rem);
+@size-rem-largest:  unit(@size-largest, rem);
+@size-rem-larger:   unit(@size-larger, rem);
+@size-rem-large:    unit(@size-large, rem);
+@size-rem-base:     unit(@size-base, rem);
+@size-rem-small:    unit(@size-small, rem);
+@size-rem-smaller:  unit(@size-smaller, rem);
+@size-rem-smallest: unit(@size-smallest, rem);
+@size-rem-micro:    unit(@size-micro, rem);
+@size-rem-nano:     unit(@size-nano, rem);
+@size-rem-pico:     unit(@size-pico, rem);
+@size-em-tera:      unit(@size-tera, em);
+@size-em-giga:      unit(@size-giga, em);
+@size-em-mega:      unit(@size-mega, em);
+@size-em-largest:   unit(@size-largest, em);
+@size-em-larger:    unit(@size-larger, em);
+@size-em-large:     unit(@size-large, em);
+@size-em-base:      unit(@size-base, em);
+@size-em-small:     unit(@size-small, em);
+@size-em-smaller:   unit(@size-smaller, em);
+@size-em-smallest:  unit(@size-smallest, em);
+@size-em-micro:     unit(@size-micro, em);
+@size-em-nano:      unit(@size-nano, em);
+@size-em-pico:      unit(@size-pico, em);
+
+// typography
+// : font-size applications
+@font-size--html:                     16px;
+@font-size--html-sm:                  14px;
+@font-size--body:                     @size-em-base;
+@font-size--nav:                      @size-em-base;
+@font-size--postNav-link:             @size-em-large;
+@font-size--post-date:                @size-em-base;
+@font-size--post-caption:             @size-em-tera;
+@font-size--post-caption-sm:          @size-em-giga;
+@font-size--post-caption--archive:    @size-em-giga;
+@font-size--post-caption--archive-sm: @size-em-largest;
+// : font-family variables
+@font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-icons:      "icons";
+// : font-family applications
+@font-family--body: @font-family-sans-serif;
+// : font-weight variables
+@font-weight-bold:      700;
+@font-weight-semibold:  600;
+@font-weight-normal:    400;
+@font-weight-semilight: 300;
+// : font-weight applications
+@font-weight--body:          @font-weight-bold;
+@font-weight--post-date:     inherit;
+@font-weight--post-caption:  @font-weight-bold;
+@font-weight--nav:           @font-weight-bold;
+// : line-height variables
+@line-height-tight: 1.1;
+@line-height-base:  1.4;
+// : line-height applications
+@line-height--body:          @line-height-base;
+@line-height--post-caption:  @line-height-tight;
+// : letter-spacing variables
+@letter-spacing-tight: -0.024em;
+@letter-spacing-base:  0;
+@letter-spacing-loose: 0.02em;
+// : letter-spacing applications
+@letter-spacing--body:          @letter-spacing-base;
+@letter-spacing--nav:           @letter-spacing-base;
+@letter-spacing--post-date:     @letter-spacing-base;
+@letter-spacing--post-caption:  @letter-spacing-tight;
+// : text-transform applications
+@text-transform--nav:       none;
+@text-transform--post-date: none;
+
+// sizing and spacing
+// : applications
+@padding-top--nav-link:           @size-em-base;
+@padding-left--nav-link:          @size-em-larger;
+@padding-left--post-meta:         10%;
+@margin-top--page-main--archive:  @size-em-giga;
+@padding-top--post-meta--archive: @size-em-base;
+@width--page-header:              8em;
+@width--postNav:                  4em;
+@width--postNav-sm:               3em;
+@margin-bottom--post-caption:     0.2em;
+@opacity--post-image:             0.96;
+
+// miscellaneous
+@opacity-duration:     250ms;
+@translate3d-duration: 400ms;
+@translate3d-delay:    100ms;
+
+// z-index
+// : variables
+@z-index-1: 100;
+@z-index-2: 200;
+@z-index-3: 300;
+@z-index-4: 400;
+// : applications
+@z-index--post-image:  @z-index-1;
+@z-index--page-header: @z-index-4;
+@z-index--page-footer: @z-index--page-header;
+@z-index--post-meta:   @z-index-2;
+@z-index--postNav:     @z-index-3;

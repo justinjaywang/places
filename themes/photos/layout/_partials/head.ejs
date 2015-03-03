@@ -1,0 +1,19 @@
+<head>
+  <meta charset="utf-8">
+  <%
+  var title = page.title;
+  if (is_post()) {
+    title = (page.title) ? page.title : page.location;
+  }
+  %>
+  <title><% if (title){ %><%= title %><% } else { %><%= config.title %><% } %></title>
+  <meta name="description" content="<%= config.description %>">
+  <meta name="author" content="<%= config.author %>">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <% if (theme.rss){ %>
+  <link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
+  <% } %>
+  <%- css('css/all') %>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>

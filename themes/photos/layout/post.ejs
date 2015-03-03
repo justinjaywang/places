@@ -1,0 +1,5 @@
+<%- partial('_partials/page-header', null, {cache: !config.relative_link}) %>
+<main class="page-main" id="postPage">
+  <%- partial('_partials/post', {post: page}) %>
+</main>
+<%- partial('_partials/page-footer', null, {cache: !config.relative_link}) %>

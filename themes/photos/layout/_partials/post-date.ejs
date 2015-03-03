@@ -1,0 +1,5 @@
+<% if (post.date) { %>
+  <h4 class="post-date">
+    <time datetime="<%= date_xml(post.date) %>"><%= date(post.date, date_format) %></time>
+  </h4>
+<% } %>

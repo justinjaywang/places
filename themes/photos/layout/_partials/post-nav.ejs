@@ -1,0 +1,10 @@
+<nav class="postNav">
+  <ul class="postNav-list">
+    <li class="postNav-item postNav-item--prev">
+      <a <% if (post.prev) { %>href="<%= url_for(post.prev.path) %>" <% } %>class="postNav-link icon-prev<% if (!post.prev) { %> postNav-link--disabled<% } %>"<% if (post.prev) { %> id="prevButton"<% } %>></a>
+    </li>
+    <li class="postNav-item postNav-item--next">
+      <a <% if (post.next) { %>href="<%= url_for(post.next.path) %>" <% } %>class="postNav-link icon-next<% if (!post.next) { %> postNav-link--disabled<% } %>"<% if (post.next) { %> id="nextButton"<% } %>></a>
+    </li>
+  </ul>
+</nav>

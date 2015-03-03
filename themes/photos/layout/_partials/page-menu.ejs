@@ -1,0 +1,15 @@
+<aside class="page-menu" id="menu">
+  <nav class="navbar navbar--top u-alignRight u-fillWidth">
+    <button class="button navbar-button icon-close" id="closeButton"></button>
+  </nav>
+  <ul class="page-menu-list">
+    <% var posts = get_posts({
+      orderby: 'date',
+      order: -1,
+      count: 0
+    }); %>
+    <% posts.each(function(post){ %>
+      <%- partial('page-menu-item', {post: post}) %>
+    <% }) %>
+  </ul>
+</aside>

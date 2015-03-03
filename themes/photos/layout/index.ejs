@@ -1,0 +1,8 @@
+<% var posts = get_posts({
+  orderby: 'date',
+  order: -1,
+  count: 1
+}); %>
+<% posts.each(function(post){ %>
+  <a id="firstPostLink" href="<%= post.path %>"></a>
+<% }) %>
