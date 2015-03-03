@@ -1,8 +1,8 @@
-<article class="post" id="post" data-post-id="<%= post._id %>">
+<article class="post" data-post-id="<%= post._id %>">
   <figure class="post-image" id="postImage" style="background-image: url('<%= theme.file_path %><%= post.file_name %>')"></figure>
   <%- partial('post-meta', {post: post, isArchive: false}) %>
+  <%- partial('post-nav', {post: post}) %>
 </article>
-<%- partial('post-nav', {post: post}) %>
 <% if (post.prev) { %>
   <div id="prevImage"><%= theme.file_path %><%= post.prev.file_name %></div>
 <% } %>

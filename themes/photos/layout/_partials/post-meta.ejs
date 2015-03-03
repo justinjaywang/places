@@ -1,4 +1,4 @@
-<figcaption class="post-meta <% if (isArchive) { %>post-meta--archive<% } %>">
+<figcaption class="<% if (!isArchive) { %>post-meta<% } else { %>postPreview<% } %>">
   <div class="post-meta-inner">
     <h1 class="post-caption"><%- post.content %></h1>
     <%- partial('post-date', {post: post, date_format: config.date_format}) %>

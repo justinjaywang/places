@@ -32,7 +32,7 @@
   }
 
   // previous and next
-  $('.post a').click(function(e) {
+  $('a').click(function(e) {
     e.preventDefault();
     var href = $(this).attr('href');
     if (href) {
