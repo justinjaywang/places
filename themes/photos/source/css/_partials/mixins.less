@@ -51,6 +51,12 @@
        -o-transition: -o-transform @transition;
           transition: transform @transition;
 }
+.transition-delay(@delay) {
+  -webkit-transition-delay: @delay;
+     -moz-transition-delay: @delay;
+       -o-transition-delay: @delay;
+          transition-delay: @delay;
+}
 
 // user select
 .user-select(@select) {

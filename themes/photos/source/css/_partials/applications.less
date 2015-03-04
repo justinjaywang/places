@@ -60,7 +60,7 @@ a {
   z-index: @z-index--post-image;
   .opacity(@opacity--post-image);
 }
-.post-image.faded {
+.isTransitioning .post-image {
   .opacity(0);
 }
 .post-meta {
@@ -95,6 +95,9 @@ a {
   letter-spacing: @letter-spacing--post-caption;
   line-height: @line-height--post-caption;
   margin-bottom: @margin-bottom--post-caption;
+}
+.postPreview-link {
+  display: block;
 }
 .postPreview .post-caption {
   font-size: @font-size--post-caption--archive;
@@ -131,7 +134,7 @@ a {
   bottom: 0;
 }
 .postNav-item {
-  position: absolute;
+  position: fixed;
   display: table;
   width: @width--postNav;
 }
@@ -149,6 +152,22 @@ a {
 .postNav-link--disabled {
   display: none;
 }
+
+// archive transition, TEMP
+.postPreview-link {
+  .transition(opacity @opacity-duration ease);
+  .opacity(1);
+}
+.isTransitioning .postPreview-link {
+  .opacity(0);
+}
+.generateTransitionDelays(@n, @i: 1) when (@i =< @n) {
+  .postPreview-link:nth-of-type(@{i}) {
+    .transition-delay(unit((12.5 * @i), ms));
+  }
+  .generateTransitionDelays(@n, (@i + 1));
+}
+.generateTransitionDelays(72);
 
 // miscellaneous
 #prevImage,

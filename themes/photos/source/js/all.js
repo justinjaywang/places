@@ -2,24 +2,25 @@
   'use strict';
 
   // variables
-  var postImage = $('#postImage'),
+  var body = $('body'),
+    postImage = $('#postImage'),
     // latestButton = $('#latestButton'),
     // archiveButton = $('#archiveButton'),
     prevButton = $('#prevButton'),
     nextButton = $('#nextButton');
 
-  var fadeInDelay = 25,
+  var fadeInDelay = 50,
     navigateDelay = 150;
 
   var leftKeyCode = 37,
-    upKeyCode = 38,
-    rightKeyCode = 39,
-    downKeyCode = 40,
-    escKeyCode = 27;
+    rightKeyCode = 39;
+    // upKeyCode = 38,
+    // downKeyCode = 40,
+    // escKeyCode = 27;
 
   // functions
   var navigate = function(href) {
-    postImage.addClass('faded');
+    body.addClass('isTransitioning');
     setTimeout(function() {
       window.location.href = href;
     }, navigateDelay);
@@ -52,27 +53,17 @@
       if (nextButton) {
         location = nextButton.attr('href');
       }
-    // } else if (e.keyCode == upKeyCode) {
-    //   e.preventDefault();
-    //   if (latestButton) {
-    //     location = latestButton.attr('href');
-    //   }
-    // } else if (e.keyCode == downKeyCode) {
-    //   e.preventDefault();
-    //   if (archiveButton) {
-    //     location = archiveButton.attr('href');
-    //   }
     }
     if (location) {
       navigate(location);
     }
   });
 
-  // image preloading
-  postImage.addClass('faded');
+  // image preloading and transition classes
+  body.addClass('isTransitioning');
   $(window).on('load pageshow', function() {
     setTimeout(function() {
-      postImage.removeClass('faded');
+      body.removeClass('isTransitioning');
     }, fadeInDelay);
     var prevImageSrc = $('#prevImage').html(),
       nextImageSrc = $('#nextImage').html();
