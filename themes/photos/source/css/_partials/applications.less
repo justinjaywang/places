@@ -52,9 +52,6 @@ a {
 }
 .post-image {
   background-size: contain;
-  // background-size: cover;
-  // background-repeat: repeat-x;
-  // background-repeat: no-repeat;
   background-repeat: repeat;
   background-position: center;
   height: 100%;
@@ -142,18 +139,12 @@ a {
   display: table-cell;
   vertical-align: middle;
   font-size: @font-size--postNav-link;
-  .transition(opacity @opacity-duration ease);
-}
-.postNav-link.faded {
-  .opacity(0);
 }
 .postNav-item--prev {
   left: 0;
-  float: left;
 }
 .postNav-item--next {
   right: 0;
-  float: right;
 }
 .postNav-link--disabled {
   display: none;
