@@ -1,9 +1,0 @@
-<li class="page-menu-item u-alignLeft" data-menu-item-id="<%= post._id %>">
-  <a href="<%- url_for(post.path) %>" class="page-menu-link">
-    <% if (post.thumbnail) { %>
-      <figure class="page-menu-thumbnail" style="background-image: url('<%= post.thumbnail %>')"></figure>
-    <% } %>
-    <span class="page-menu-active-marker icon-checkmark"></span>
-    <%- partial('post-meta', {post: post, isMenu: true}) %>
-  </a>
-</li>
