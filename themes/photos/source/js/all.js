@@ -3,8 +3,8 @@
 
   // variables
   var postImage = $('#postImage'),
-    latestButton = $('#latestButton'),
-    archiveButton = $('#archiveButton'),
+    // latestButton = $('#latestButton'),
+    // archiveButton = $('#archiveButton'),
     prevButton = $('#prevButton'),
     nextButton = $('#nextButton');
 
@@ -52,16 +52,16 @@
       if (nextButton) {
         location = nextButton.attr('href');
       }
-    } else if (e.keyCode == upKeyCode) {
-      e.preventDefault();
-      if (latestButton) {
-        location = latestButton.attr('href');
-      }
-    } else if (e.keyCode == downKeyCode) {
-      e.preventDefault();
-      if (archiveButton) {
-        location = archiveButton.attr('href');
-      }
+    // } else if (e.keyCode == upKeyCode) {
+    //   e.preventDefault();
+    //   if (latestButton) {
+    //     location = latestButton.attr('href');
+    //   }
+    // } else if (e.keyCode == downKeyCode) {
+    //   e.preventDefault();
+    //   if (archiveButton) {
+    //     location = archiveButton.attr('href');
+    //   }
     }
     if (location) {
       navigate(location);
