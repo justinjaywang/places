@@ -161,13 +161,13 @@ a {
 .isTransitioning .postPreview-link {
   .opacity(0);
 }
-.generateTransitionDelays(@n, @i: 1) when (@i =< @n) {
-  .postPreview-link:nth-of-type(@{i}) {
-    .transition-delay(unit((12.5 * @i), ms));
-  }
-  .generateTransitionDelays(@n, (@i + 1));
-}
-.generateTransitionDelays(72);
+// .generateTransitionDelays(@n, @i: 1) when (@i =< @n) {
+//   .postPreview-link:nth-of-type(@{i}) {
+//     .transition-delay(unit((12.5 * @i), ms));
+//   }
+//   .generateTransitionDelays(@n, (@i + 1));
+// }
+// .generateTransitionDelays(72);
 
 // miscellaneous
 #prevImage,
