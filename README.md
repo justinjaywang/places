@@ -1,3 +1,1 @@
-# Places
-
-I did it. I made a #footselfies blog.
+I did it. I made a blog of my foot selfies.
