@@ -15,11 +15,11 @@
 @background-color--body: @color-blackish;
 @color--body:            @color-white;
 @color--a:               inherit;
-@color--post-caption:    inherit;
+@color--post-caption:    @color-white;
 
 // sizing
 @size-tera:         3;
-@size-giga:         2;
+@size-giga:         2.25;
 @size-mega:         1.75;
 @size-largest:      1.5;
 @size-larger:       1.3333;
@@ -62,14 +62,13 @@
 // : font-size applications
 @font-size--html:                     16px;
 @font-size--html-sm:                  14px;
-@font-size--body:                     @size-em-base;
-@font-size--nav:                      @size-em-base;
-@font-size--postNav-link:             @size-em-larger;
+@font-size--body:                     @size-rem-base;
+@font-size--nav:                      @size-rem-base;
+@font-size--postNav-link:             @size-rem-larger;
+@font-size--post-meta:                @size-rem-larger;
+@font-size--postPreview:              @size-rem-base;
+@font-size--post-caption:             @size-em-giga;
 @font-size--post-date:                @size-em-base;
-@font-size--post-caption:             @size-em-tera;
-@font-size--post-caption-sm:          @size-em-giga;
-@font-size--post-caption--archive:    @size-em-giga;
-@font-size--post-caption--archive-sm: @size-em-largest;
 // : font-family variables
 @font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-icons:      "icons";
